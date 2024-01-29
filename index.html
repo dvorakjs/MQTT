@@ -1,16 +1,26 @@
 <pre>
-MQTT
-머신 대 머신 통신에 사용되는 표준 기반 메시징 프로토콜
-<a href="https://github.com/bluerhinos/phpMQTT/blob/master/phpMQTT.php">MQTT class</a>
+*2024년 01월 29일  
+ - MQTT 정의
+   머신 대 머신 통신에 사용되는 표준 기반 메시징 프로토콜
 
 
-<a href="https://www.hivemq.com/demos/websocket-client/">Hive MQ</a>"
+ - public broker
+   <a href="https://www.hivemq.com/demos/websocket-client/">Hive MQ</a>"
 
-publisher->Broker<->MQTT Client
+ - MQTT 구조
+  publisher->Broker<->MQTT Client
+
+ - MQTT class
+   ~ <a href="https://github.com/bluerhinos/phpMQTT/blob/master/phpMQTT.php">Here</a> 
+   ~ composer로 설치
+      = PHP 의존성 관리 도구
+      = https://getcomposer.org/download/
+      = composer require bluerhinos/phpmqtt=@dev
 
 
 
-*2024년 01월 29일
+
+
  - MQTT php class
    ~ 멤버 변수: 연결관련된 URL, username, PW, 명령어 번호
    ~ 생성자: broker 함수 호출
@@ -20,4 +30,6 @@ publisher->Broker<->MQTT Client
      = stream_context_create: Creates a stream context
      = stream_socket_client: Open Internet or Unix domain socket connection
                              tls, tcp 
-</pre>
+
+
+                            </pre>
