@@ -1,1 +1,23 @@
+<pre>
+MQTT
+머신 대 머신 통신에 사용되는 표준 기반 메시징 프로토콜
 <a href="https://github.com/bluerhinos/phpMQTT/blob/master/phpMQTT.php">MQTT class</a>
+
+
+<a href="https://www.hivemq.com/demos/websocket-client/">Hive MQ</a>"
+
+publisher->Broker<->MQTT Client
+
+
+
+*2024년 01월 29일
+ - MQTT php class
+   ~ 멤버 변수: 연결관련된 URL, username, PW, 명령어 번호
+   ~ 생성자: broker 함수 호출
+   ~ broker 함수: address, port, clientid, cafile 세팅
+   ~ conncet_auto 함수: 연결될 때까지 connect 함수 호출
+   ~ connect 함수: will, username, pw 세팅, stream_context_create 호출
+     = stream_context_create: Creates a stream context
+     = stream_socket_client: Open Internet or Unix domain socket connection
+                             tls, tcp 
+</pre>
